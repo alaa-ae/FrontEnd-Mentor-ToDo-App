@@ -1,0 +1,59 @@
+:root {
+        --Very-Dark-Blue: hsl(235, 21%, 11%);
+        --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+        --Light-Grayish-Blue: hsl(234, 39%, 85%);
+        --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+        --DarkGrayishBlue: hsl(234, 11%, 52%);
+        --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+        --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+}
+
+.dark {
+        background-color: var(--Very-Dark-Blue);
+}
+
+.dark .bg-Image {
+        background-image: url(./images/bg-mobile-dark.jpg);
+}
+
+.dark .todo_input {
+        color: var(--Light-Grayish-Blue);
+}
+
+.dark .card-Body-AddTodo,
+.dark .add-Todo-Input {
+        background-color: var(--Very-Dark-Desaturated-Blue);
+}
+
+.dark #dark-Mode-Icon {
+        background-image: url(./images/icon-sun.svg);
+}
+
+.dark .AddedTodo-List>.card-Body-AddTodo {
+        border-bottom: 1px solid var(--DarkGrayishBlue);
+}
+
+.dark .close {
+        background-image: url(./images/icon-cross.png);
+        width: 22px;
+        height: 22px;
+}
+
+.dark .added-Task {
+        color: var(--Light-Grayish-Blue);
+
+}
+
+.dark .stats_div {
+        background-color: var(--Very-Dark-Desaturated-Blue);
+}
+
+.dark .filters {
+        background-color: var(--Very-Dark-Desaturated-Blue);
+}
+
+@media (min-width:780px) {
+        .dark .bg-Image {
+                background-image: url(./images/bg-desktop-dark.jpg);
+        }
+}

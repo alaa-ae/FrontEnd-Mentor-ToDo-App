@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./darkmode.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <div class="bg-Image"></div>
+          <div class="card">
+            <div class="card-header">
+              <h1 class="header_title">TODO</h1>
+              <div id="dark-Mode-Icon" onclick="darkMode()"></div>
+            </div>
+            <div class="card-Body">
+              <div class="add-Todo-Input">
+                <div class="checkbtn"></div>
+                <input
+                  type="text"
+                  class="todo_input"
+                  placeholder="Create a new todo..."
+                  id="input"
+                />
+              </div>
+            </div>
+
+            <div class="todos">
+              <ul class="AddedTodo-List">
+                <li class="card-Body-AddTodo">
+                  <label class="input_label">
+                    <input type="checkbox" class="checkbtn" />
+                    <p class="todo_input added-Task">Hit the gym</p>
+                  </label>
+                  <span class="close"></span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="stats_div">
+              <p class="completed"><span id="items_left"></span> items left</p>
+              <button id="clearBtn" class="completed">Clear Completed</button>
+            </div>
+
+            <div class="filters">
+              <label>
+                <input type="radio" name="filter" id="all" checked />
+                <span>All</span>
+              </label>
+              <label>
+                <input type="radio" name="filter" id="active" />
+                <span>Active</span>
+              </label>
+              <label>
+                <input type="radio" name="filter" id="completed" />
+                <span>Completed</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app2.0.js"></script>
+  </body>
+</html>
